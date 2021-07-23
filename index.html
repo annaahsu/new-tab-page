@@ -5,50 +5,109 @@
   <title>New Tab</title>
   <link rel="stylesheet" href="style.css" tyle="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="main-container">
-    <div class="container">
-      <h1>Quick Links</h1>
-      <h2>Web Dev</h2>
-      <p><a href="https://github.com/annaahsu">Github</a></p>
-      <p><a href="https://dash.cloudflare.com/login/">Cloudflare</a></p>
+    <div class="row">
+      <div class="container" id="heading">
+        <h1 id="message"></h1>
+        <div class="time">
+          <h2 id="clock" onload="showTime()"></h2>
+          <h2 id="date" onload="showTime()"></h2>
+        </div>
+      </div>
     </div>
-    <div class="flex-container">
-      <div class="container anchor">
-        <h1>Anchor</h1>
-        <p>
-          <a href="https://tinyurl.com/monday-check-in-2020">Monday Attendance</a>
-        </p>
+    <div class="row">
+      <div class="container" id="search">
+        <form action="https://www.google.com/search" method="get">
+          <input type="text" name="q" id="search-query" placeholder="What do you want to find out on Google today?"
+            autocapitalize="off" autocomplete="off">
+        </form>
       </div>
-      <div class="container blue">
-        <h1>Blue Day</h1>
-        <p><a href="">APUSH</a></p>
-        <p><a href="">English</a></p>
-        <p><a href="">AP Music Theory</a></p>
-        <p><a href="">Audio</a></p>
+    </div>
+    <div class="row" id="bottom">
+      <div id="left">
+        <div class="container" id="quick-links">
+          <h1>Quick Links</h1>
+          <h2>Web Dev</h2>
+          <div class="btn-bar">
+            <a href="https://annahsu.dev">Website</a>
+            <a href="https://github.com/annaahsu">Github</a>
+            <a href="https://gitlab.com/">Gitlab</a>
+            <a href="https://dash.cloudflare.com/login/">Cloudflare</a>
+            <a href="https://app.netlify.com/">Netlify</a>
+            <a href="https://director.tjhsst.edu">Director</a>
+            <a href="https://fonts.google.com/">Google Fonts</a>
+            <a href="https://color.adobe.com/create/color-wheel">Adobe Color Wheel</a>
+            <a href="https://www.colorhexa.com/">ColorHexa</a>
+            <a href="https://colorhunt.co/">Colorhunt</a>
+            <a href="https://www.figma.com/files/">Figma</a>
+          </div>
+          <h2>Personal</h2>
+          <div class="btn-bar">
+            <a href="https://login.tailscale.com/admin/machines">Tailscale</a>
+            <a href="https://vault.bitwarden.com/#/vault">Bitwarden</a>
+            <a href="https://open.spotify.com/">Spotify</a>
+          </div>
+          <h2>School</h2>
+          <div class="btn-bar">
+            <a href="https://ion.tjhsst.edu">Ion</a>
+            <a href="https://webmail.tjhsst.edu">Webmail</a>
+            <a href="https://fcps.blackboard.com">Blackboard</a>
+            <a href="https://classroom.google.com/u/1/">Google Classroom</a>
+            <a href="https://sisstudent.fcps.edu/">SIS</a>
+            <a href="https://myap.collegeboard.org/">MyAP</a>
+            <a href="https://quizlet.com">Quizlet</a>
+          </div>
+          <h2>Productivity</h2>
+          <div class="btn-bar">
+            <a href="https://www.notion.so/Home-d5e26079cb2844fba280fb694638fcca">Notion</a>
+            <a href="https://calendar.google.com/calendar/u/0/r">Google Calendar</a>
+          </div>
+        </div>
       </div>
-      <div class="container red">
-        <h1>Red Day</h1>
-        <p>
-          <a href="">Latin (Blackboard)</a>,
-          <a href="">Latin (Google Meet)</a>
-        </p>
-        <p>
-          <a href="">BC (Blackboard)</a>,
-          <a href="">BC (Google Meet)</a>
-        </p>
-        <p><a href="">Physics</a></p>
-        <p><a href="">CSC</a></p>
-        <p><a href="">Dev Club</a></p>
-        <p><a href="">(Homeroom)</a></p>
+      <div class="flex-container" id="right">
+        <div class="container anchor">
+          <h1>Anchor</h1>
+          <div class="btn-bar">
+          </div>
+        </div>
+        <div class="container blue">
+          <h1>Blue Day</h1>
+          <div class="btn-bar">
+          </div>
+        </div>
+        <div class="container red">
+          <h1>Red Day</h1>
+          <div class="btn-bar">
+          </div>
+        </div>
+        <div class="container weekend">
+          <h1>Weekend</h1>
+          <div class="btn-bar">
+            <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">FreeCodeCamp</a>
+            <a href="https://ehmatthes.github.io/pcc/">Python Crash Course</a>
+          </div>
+        </div>
+        <div class="container sticky college-apps">
+          <h1>College Apps</h1>
+          <div class="btn-bar">
+            <a href="https://www.notion.so/annaahsu/d5122213edd64af89709fb6f6bae210d">Notion</a>
+            <a href="https://apply.commonapp.org/dashboard">Common App</a>
+            <a href="https://apply.mitadmissions.org/apply/">MIT Portal</a>
+            <a href="https://drive.google.com/drive/folders/1niBOQ9dAKyi3j69IhpFGPl7oneBypqfp?usp=sharing">Google
+              Drive</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
   <input type="button" id="btn" onClick="showAll()" value="Show All" />
+  <script src="js/script.js"></script>
+  <script src="js/color.js"></script>
+  <script src="js/clock.js"></script>
 </body>
 
 </html>
