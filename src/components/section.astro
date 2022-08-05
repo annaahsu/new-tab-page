@@ -1,0 +1,28 @@
+---
+import ButtonBar from '@components/buttonbar.astro';
+import ButtonLink from '@components/buttonlink.astro';
+
+export interface Props {
+  subtitle: string;
+  section: any;
+}
+
+const { subtitle, section } = Astro.props;
+---
+
+<div class="section">
+  <h3>{subtitle}</h3>
+  <ButtonBar>
+  {section.map(({ name, link }) => (
+    <ButtonLink href={link}>{name}</ButtonLink>
+  ))}
+  </ButtonBar>
+</div>
+
+<style lang="scss">
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+</style>

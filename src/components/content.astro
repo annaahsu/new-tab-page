@@ -1,0 +1,34 @@
+---
+import Card from '@components/card.astro';
+
+import webdev from '@data/quicklinks/webdev.json';
+import personal from '@data/quicklinks/personal.json';
+import productivity from '@data/quicklinks/productivity.json';
+
+import general from '@data/school/general.json';
+import work from '@data/school/work.json';
+
+const quicklinks = [["Web Dev", webdev], ["Personal", personal], ["Productivity", productivity]];
+
+const school = [["General", general], ["Work", work]];
+---
+
+<div class="content">
+  <div class="left">
+    <Card title="Quick Links" sections={quicklinks} />
+  </div>
+  <div class="right">
+    <Card title="School" sections={school} />
+  </div>
+</div>
+
+<style lang="scss">
+  .content {
+    display: flex;
+    gap: 32px;
+  }
+
+  .left, .right {
+    flex: 1;
+  }
+</style>

@@ -1,0 +1,51 @@
+---
+let date = new Date();
+
+const myName = "Anna";
+const setMessage = (time) => {
+    if (time >= 0 && time < 6) {
+      return "Sleep, girl!";
+    } else if (time >= 6 && time < 9) {
+      return "Too early to be awake &#x1F634;";
+    } else if (time >= 9 && time < 12) {
+      return `Good morning, ${myName}!`;
+    } else if (time >= 12 && time < 18) {
+      return `Good afternoon, ${myName}!`;
+    } else if (time >= 18 && time < 21) {
+      return `Good evening, ${myName}!`;
+    } else {
+      return `Good night, ${myName}!`;
+    }
+  };
+
+const message = setMessage(date.getHours());
+---
+
+<div class="header">
+  <h1>{message}</h1>
+  <h3 id="time" onload="showTime()" />
+</div>
+
+<style lang="scss">
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+</style>
+
+<script>
+  const showTime = () => {
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const today = date.toLocaleDateString('en-US', options);
+    const datetime = `The time is currently ${time} on ${today}.`
+    document.getElementById("time").innerText = datetime;
+    document.getElementById("time").textContent = datetime;
+
+    setTimeout(showTime, 1000);
+  };
+
+  showTime();
+</script>
