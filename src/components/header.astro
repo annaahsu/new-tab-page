@@ -1,28 +1,39 @@
 ---
+import { Icon } from 'astro-icon';
+
 let date = new Date();
 
 const myName = "Anna";
-const setMessage = (time) => {
-    if (time >= 0 && time < 6) {
-      return "Sleep, girl!";
-    } else if (time >= 6 && time < 9) {
-      return "Too early to be awake &#x1F634;";
-    } else if (time >= 9 && time < 12) {
-      return `Good morning, ${myName}!`;
-    } else if (time >= 12 && time < 18) {
-      return `Good afternoon, ${myName}!`;
-    } else if (time >= 18 && time < 21) {
-      return `Good evening, ${myName}!`;
-    } else {
-      return `Good night, ${myName}!`;
-    }
-  };
+const setItems = (time) => {
+  let m, i;
+  if (time >= 0 && time < 6) {
+    m = "Sleep, girl!";
+    i = "bed-outline";
+  } else if (time >= 6 && time < 9) {
+    m = "Too early to be awake";
+    i = "alarm-outline";
+  } else if (time >= 9 && time < 12) {
+    m = `Good morning, ${myName}!`;
+    i = "sunny-outline";
+  } else if (time >= 12 && time < 18) {
+    m = `Good afternoon, ${myName}!`;
+    i = "partly-sunny-outline";
+  } else if (time >= 18 && time < 21) {
+    m = `Good evening, ${myName}!`;
+    i = "cloudy-night-outline";
+  } else {
+    m = `Good night, ${myName}!`;
+    i = "moon-outline";
+  }
+  return [m, `ion:${i}`];
+};
 
-const message = setMessage(date.getHours());
+let [message, icon] = setItems(date.getHours());
 ---
 
+
 <div class="header">
-  <h1>{message}</h1>
+  <div class="heading"><h1>{message}</h1><Icon size={36} name={icon} alt="icon signaling time of day" /></div>
   <h3 id="time" onload="showTime()" />
 </div>
 
@@ -31,6 +42,16 @@ const message = setMessage(date.getHours());
     display: flex;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .heading {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  [astro-icon] {
+    color: var(--light);
   }
 </style>
 
