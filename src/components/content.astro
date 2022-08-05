@@ -1,5 +1,6 @@
 ---
 import Card from '@components/card.astro';
+import Day from '@components/day.astro';
 
 import webdev from '@data/quicklinks/webdev.json';
 import personal from '@data/quicklinks/personal.json';
@@ -8,9 +9,20 @@ import productivity from '@data/quicklinks/productivity.json';
 import general from '@data/school/general.json';
 import work from '@data/school/work.json';
 
+import csci103 from '@data/classes/csci103.json';
+import csci170 from '@data/classes/csci170.json';
+import engl172 from '@data/classes/engl172.json';
+import writ150 from '@data/classes/writ150.json';
+
 const quicklinks = [["Web Dev", webdev], ["Personal", personal], ["Productivity", productivity]];
 
 const school = [["General", general], ["Work", work]];
+
+const mon = [[writ150, "lecture"], [engl172, "lecture"]];
+const tues = [[csci103, "lecture"], [csci170, "lecture"]];
+const wed = [[writ150, "lecture"], [engl172, "discussion"], [engl172, "lecture"], [csci170, "quiz"]];
+const thurs = [[csci103, "lecture"], [csci170, "lecture"], [csci103, "quiz"]];
+const fri = [[writ150, "lecture"], [csci170, "discussion"], [csci103, "lab"]];
 ---
 
 <div class="content">
@@ -19,16 +31,58 @@ const school = [["General", general], ["Work", work]];
   </div>
   <div class="right">
     <Card title="School" sections={school} />
+    <div class="mon day">
+      <Day title="Monday" classes={mon} />
+    </div>
+    <div class="tues day">
+      <Day title="Tuesday" classes={tues} />
+    </div>
+    <div class="wed day">
+      <Day title="Wednesday" classes={wed} />
+    </div>
+    <div class="thurs day">
+      <Day title="Thursday" classes={thurs} />
+    </div>
+    <div class="fri day">
+      <Day title="Friday" classes={fri} />
+    </div>
   </div>
 </div>
 
 <style lang="scss">
   .content {
     display: flex;
+    flex-flow: row wrap;
     gap: 32px;
   }
 
-  .left, .right {
+  .day {
+    display: none;
+  }
+
+  .left,
+  .right {
     flex: 1;
+    min-width: 270px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 </style>
+
+<script>
+  const show = (classname) => {
+    const elements = document.getElementsByClassName(classname);
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.display = "block";
+    }
+  };
+  const setDisplay = (day) => {
+    const days = ["mon", "tues", "wed", "thurs", "fri"];
+    show(days[day - 1]);
+  };
+
+  let currDate = new Date();
+  setDisplay(currDate.getDay());
+</script>

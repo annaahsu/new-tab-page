@@ -1,0 +1,34 @@
+[
+  {
+    "name": "ENGL 172",
+    "type": "lecture",
+    "location": "THH102",
+    "time": "2:00 PM - 3:20 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": null
+      }
+    ]
+  },
+  {
+    "name": "ENGL 172",
+    "type": "discussion",
+    "location": "TTH108",
+    "time": "12:00 PM - 12:50 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": null
+      }
+    ]
+  }
+]

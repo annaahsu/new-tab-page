@@ -1,0 +1,50 @@
+[
+  {
+    "name": "CSCI 103",
+    "type": "lecture",
+    "location": "SGM124",
+    "time": "9:30 AM - 10:50 AM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": null
+      }
+    ]
+  },
+  {
+    "name": "CSCI 103",
+    "type": "lab",
+    "location": "SAL126",
+    "time": "2:00 PM - 3:50 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": null
+      }
+    ]
+  },
+  {
+    "name": "CSCI 103",
+    "type": "quiz",
+    "location": "TBA",
+    "time": "7:00 PM - 8:50 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": null
+      }
+    ]
+  }
+]

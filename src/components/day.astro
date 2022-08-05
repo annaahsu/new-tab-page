@@ -1,18 +1,18 @@
 ---
-import Section from '@components/section.astro';
+import Class from '@components/class.astro';
 
 export interface Props {
   title: string;
-  sections: any;
+  classes: any;
 }
-const { title, sections } = Astro.props;
+const { title, classes } = Astro.props;
 ---
 
 <div class="card">
   <h2>{title}</h2>
-  {sections.map((section) => (
+  {classes.map((c) => (
     // well this is certainly a little janky
-    <Section subtitle={section[0]} section={section[1]} />
+    <Class type={c[1]} section={c[0]} />
   ))}
 </div>
 
