@@ -11,8 +11,5 @@
   "devDependencies": {
     "astro": "^1.0.0-rc.4",
     "sass": "^1.54.1"
-  },
-  "dependencies": {
-    "astro-icon": "^0.7.3"
   }
 }
