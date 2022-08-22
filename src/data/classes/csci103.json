@@ -7,11 +7,19 @@
     "links": [
       {
         "name": "Blackboard",
-        "link": null
+        "link": "https://blackboard.usc.edu/webapps/blackboard/execute/announcement?method=search&context=course_entry&course_id=_303645_1&handle=announcements_entry&mode=view"
       },
       {
         "name": "Google Drive",
-        "link": null
+        "link": "https://drive.google.com/drive/folders/1RenBzY8Q_7jU8ohFgehyT1yGu2qj-XBo"
+      },
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/cs103"
+      },
+      {
+        "name": "Codio",
+        "link": "https://www.codio.com/"
       }
     ]
   },
@@ -23,11 +31,15 @@
     "links": [
       {
         "name": "Blackboard",
-        "link": null
+        "link": "https://blackboard.usc.edu/webapps/blackboard/execute/announcement?method=search&context=course_entry&course_id=_303645_1&handle=announcements_entry&mode=view"
       },
       {
         "name": "Google Drive",
-        "link": null
+        "link": "https://drive.google.com/drive/folders/1RenBzY8Q_7jU8ohFgehyT1yGu2qj-XBo"
+      },
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/cs103"
       }
     ]
   },
@@ -39,11 +51,15 @@
     "links": [
       {
         "name": "Blackboard",
-        "link": null
+        "link": "https://blackboard.usc.edu/webapps/blackboard/execute/announcement?method=search&context=course_entry&course_id=_303645_1&handle=announcements_entry&mode=view"
       },
       {
         "name": "Google Drive",
-        "link": null
+        "link": "https://drive.google.com/drive/folders/1RenBzY8Q_7jU8ohFgehyT1yGu2qj-XBo"
+      },
+      {
+        "name": "Codio",
+        "link": "https://www.codio.com/"
       }
     ]
   }

@@ -7,27 +7,27 @@
     "links": [
       {
         "name": "Blackboard",
-        "link": null
+        "link": "https://blackboard.usc.edu/webapps/blackboard/content/listContent.jsp?course_id=_298628_1&content_id=_8618229_1&mode=reset"
       },
       {
         "name": "Google Drive",
-        "link": null
+        "link": "https://drive.google.com/drive/folders/1iZ4RgLoOQOzdo0er0esrAcyUJN90Fza5"
       }
     ]
   },
   {
     "name": "ENGL 172",
     "type": "discussion",
-    "location": "TTH108",
+    "location": "THH108",
     "time": "12:00 PM - 12:50 PM",
     "links": [
       {
         "name": "Blackboard",
-        "link": null
+        "link": "https://blackboard.usc.edu/webapps/blackboard/content/listContent.jsp?course_id=_298628_1&content_id=_8618229_1&mode=reset"
       },
       {
         "name": "Google Drive",
-        "link": null
+        "link": "https://drive.google.com/drive/folders/1iZ4RgLoOQOzdo0er0esrAcyUJN90Fza5"
       }
     ]
   }

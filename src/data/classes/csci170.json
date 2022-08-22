@@ -6,12 +6,8 @@
     "time": "11:00 AM - 12:20 PM",
     "links": [
       {
-        "name": "Blackboard",
-        "link": null
-      },
-      {
         "name": "Google Drive",
-        "link": null
+        "link": "https://drive.google.com/drive/folders/1H5hzH3FundGc7M55kz5E8FtaudDNQHIk"
       }
     ]
   },
@@ -22,12 +18,8 @@
     "time": "12:00 PM - 1:50 PM",
     "links": [
       {
-        "name": "Blackboard",
-        "link": null
-      },
-      {
         "name": "Google Drive",
-        "link": null
+        "link": "https://drive.google.com/drive/folders/1H5hzH3FundGc7M55kz5E8FtaudDNQHIk"
       }
     ]
   },
@@ -38,12 +30,8 @@
     "time": "7:00 PM - 8:50 PM",
     "links": [
       {
-        "name": "Blackboard",
-        "link": null
-      },
-      {
         "name": "Google Drive",
-        "link": null
+        "link": "https://drive.google.com/drive/folders/1H5hzH3FundGc7M55kz5E8FtaudDNQHIk"
       }
     ]
   }
