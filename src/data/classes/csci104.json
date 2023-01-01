@@ -1,0 +1,42 @@
+[
+  {
+    "name": "CSCI 104",
+    "type": "lecture",
+    "location": "THH101",
+    "time": "11:00 AM - 12:20 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1HSSGbh-9DiuC0GhkIDtPuCyMTl_gkXwA?usp=share_link"
+      },
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/cs104"
+      }
+    ]
+  },
+  {
+    "name": "CSCI 104",
+    "type": "lab",
+    "location": "SAL126",
+    "time": "3:30 PM - 5:20 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1HSSGbh-9DiuC0GhkIDtPuCyMTl_gkXwA?usp=share_link"
+      },
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/cs104"
+      }
+    ]
+  }
+]

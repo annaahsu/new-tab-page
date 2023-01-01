@@ -1,0 +1,29 @@
+---
+import Class from '@components/class.astro';
+
+export interface Props {
+  title: string;
+  classes: any;
+}
+const { title, classes } = Astro.props;
+---
+
+<div class="card">
+  <h2>{title}</h2>
+  {classes.map((c) => (
+    // well this is certainly a little janky
+    <Class type={c[1]} section={c[0]} />
+  ))}
+</div>
+
+<style lang="scss">
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    background-color: var(--white);
+    padding: 24px;
+    box-shadow: var(--carddrop);
+  }
+</style>

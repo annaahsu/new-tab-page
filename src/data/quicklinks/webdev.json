@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Website",
+    "link": "https://annahsu.dev"
+  },
+  {
+    "name": "Github",
+    "link": "https://github.com/annaahsu"
+  },
+  {
+    "name": "Gitlab",
+    "link": "https://gitlab.com/annaahsu"
+  },
+  {
+    "name": "Cloudflare",
+    "link": "https://dash.cloudflare.com/login/"
+  },
+  {
+    "name": "Netlify",
+    "link": "https://app.netlify.com/"
+  },
+  {
+    "name": "Google Fonts",
+    "link": "https://fonts.google.com"
+  },
+  {
+    "name": "Adobe Color Wheel",
+    "link": "https://color.adobe.com/create/color-wheel"
+  },
+  {
+    "name": "Colorhexa",
+    "link": "https://www.colorhexa.com/"
+  },
+  {
+    "name": "Colorhunt",
+    "link": "https://colorhunt.co/"
+  }
+]

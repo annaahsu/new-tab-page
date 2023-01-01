@@ -1,0 +1,46 @@
+---
+import ButtonBar from '@components/buttonbar.astro';
+import ButtonLink from '@components/buttonlink.astro';
+
+export interface Props {
+  type: string;
+  section: any;
+}
+
+const { type, section } = Astro.props;
+
+let i;
+if (type === "lecture") {
+  i = 0;
+} else if (type === "discussion" || type === "lab") {
+  i = 1;
+} else {
+  i = null;
+}
+
+const c = section[i];
+---
+
+<div class="section">
+  <div>
+    <h3>{c.name} ({c.type}) — {c.location}</h3>
+    <span class="time">{c.time}</span>
+  </div>
+  <ButtonBar>
+    {c.links.map(({ name, link }) => (
+    <ButtonLink href={link}>{name}</ButtonLink>
+    ))}
+  </ButtonBar>
+</div>
+
+<style lang="scss">
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .time {
+    font-style: oblique;
+  }
+</style>

@@ -1,0 +1,54 @@
+---
+---
+
+<div class="header">
+  <h1 id="message" />
+  <h3 id="time" onload="showTime()" />
+</div>
+
+<style lang="scss">
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+</style>
+
+<script>
+  const myName = "Anna";
+  const setMessage = () => {
+    const date = new Date();
+    const time = date.getHours();
+    let message;
+    if (time >= 0 && time < 6) {
+      message = "Sleep, girl!";
+    } else if (time >= 6 && time < 9) {
+      message = "Too early to be awake";
+    } else if (time >= 9 && time < 12) {
+      message = `Good morning, ${myName}!`;
+    } else if (time >= 12 && time < 18) {
+      message = `Good afternoon, ${myName}!`;
+    } else if (time >= 18 && time < 21) {
+      message = `Good evening, ${myName}!`;
+    } else {
+      message = `Good night, ${myName}!`;
+    }
+    document.getElementById("message").innerHTML = message;
+  };
+
+  setMessage();
+
+  const showTime = () => {
+    const date = new Date();
+    const time = date.toLocaleTimeString();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const today = date.toLocaleDateString('en-US', options);
+    const datetime = `The time is currently ${time} on ${today}.`
+    document.getElementById("time").innerText = datetime;
+    document.getElementById("time").textContent = datetime;
+
+    setTimeout(showTime, 1000);
+  };
+
+  showTime();
+</script>
