@@ -1,0 +1,34 @@
+[
+  {
+    "name": "MATH 225",
+    "type": "lecture",
+    "location": "SOSB44",
+    "time": "12:00 PM - 12:50 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1MQYrqDEDZE7xPCXtUrgK7xCKx2uQ1iSC?usp=share_link"
+      }
+    ]
+  },
+  {
+    "name": "MATH 225",
+    "type": "lecture",
+    "location": "WPH205",
+    "time": "12:00 PM - 1:50 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": null
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1MQYrqDEDZE7xPCXtUrgK7xCKx2uQ1iSC?usp=share_link"
+      }
+    ]
+  }
+]

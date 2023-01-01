@@ -1,0 +1,18 @@
+[
+  {
+    "name": "MUSC 255",
+    "type": "lecture",
+    "location": "TMC",
+    "time": "4:00 PM - 5:50 PM",
+    "links": [
+      {
+        "name": "Blackboard",
+        "link": "https://blackboard.usc.edu/webapps/blackboard/execute/launcher?type=Course&id=_312094_1&url="
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1xd5NxP4bQzyldI81oHUBGbxS8vUBLMzb?usp=share_link"
+      }
+    ]
+  }
+]
