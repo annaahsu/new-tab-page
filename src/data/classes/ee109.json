@@ -12,6 +12,10 @@
       {
         "name": "Google Drive",
         "link": "https://drive.google.com/drive/folders/1VFfJs6ZhF9VmRez-1C67XSNTvAbiBrQC?usp=share_link"
+      },
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/ee109/"
       }
     ]
   },
@@ -28,6 +32,10 @@
       {
         "name": "Google Drive",
         "link": "https://drive.google.com/drive/folders/1VFfJs6ZhF9VmRez-1C67XSNTvAbiBrQC?usp=share_link"
+      },
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/ee109/"
       }
     ]
   }

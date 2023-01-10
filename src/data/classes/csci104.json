@@ -16,6 +16,18 @@
       {
         "name": "Bytes",
         "link": "https://bytes.usc.edu/cs104"
+      },
+      {
+        "name": "Codio",
+        "link": "https://codio.com/home/student?course_id=840256c1505b0176dc1e1af66a1e992b"
+      },
+      {
+        "name": "EdStem Discussion",
+        "link": "https://edstem.org/us/courses/32694/discussion/"
+      },
+      {
+        "name": "EdStem Admin / Grading",
+        "link": "https://edstem.org/us/courses/32843/discussion/"
       }
     ]
   },
@@ -35,7 +47,19 @@
       },
       {
         "name": "Bytes",
-        "link": "https://bytes.usc.edu/cs104"
+        "link": "https://bytes.usc.edu/cs104/"
+      },
+      {
+        "name": "Codio",
+        "link": "https://codio.com/home/student?course_id=840256c1505b0176dc1e1af66a1e992b"
+      },
+      {
+        "name": "EdStem Discussion",
+        "link": "https://edstem.org/us/courses/32694/discussion/"
+      },
+      {
+        "name": "EdStem Admin / Grading",
+        "link": "https://edstem.org/us/courses/32843/discussion/"
       }
     ]
   }
