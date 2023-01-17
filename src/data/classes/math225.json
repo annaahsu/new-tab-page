@@ -12,6 +12,10 @@
       {
         "name": "Google Drive",
         "link": "https://drive.google.com/drive/folders/1MQYrqDEDZE7xPCXtUrgK7xCKx2uQ1iSC?usp=share_link"
+      },
+      {
+        "name": "Gradescope",
+        "link": "https://www.gradescope.com/courses/486308"
       }
     ]
   },
@@ -28,6 +32,10 @@
       {
         "name": "Google Drive",
         "link": "https://drive.google.com/drive/folders/1MQYrqDEDZE7xPCXtUrgK7xCKx2uQ1iSC?usp=share_link"
+      },
+      {
+        "name": "Gradescope",
+        "link": "https://www.gradescope.com/courses/486308"
       }
     ]
   }
