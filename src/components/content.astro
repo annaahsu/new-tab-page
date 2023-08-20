@@ -9,21 +9,22 @@ import productivity from '@data/quicklinks/productivity.json';
 import general from '@data/school/general.json';
 import work from '@data/school/work.json';
 
-import csci104 from '@data/classes/csci104.json';
-import ee109 from '@data/classes/ee109.json';
-import gesm130 from '@data/classes/gesm130.json';
-import math225 from '@data/classes/math225.json';
-import musc255 from '@data/classes/musc255.json';
+import csci102 from '@data/classes/csci102.json';
+import csci270 from '@data/classes/csci270.json';
+import csci201 from '@data/classes/csci201.json';
+import ee250 from '@data/classes/ee250.json';
+import hbio205 from '@data/classes/hbio205.json';
+import engr100 from '@data/classes/engr100.json';
 
 const quicklinks = [["Web Dev", webdev], ["Personal", personal], ["Productivity", productivity]];
 
 const school = [["General", general], ["Work", work]];
 
-const mon = [[math225, "lecture"], [gesm130, "lecture"]];
-const tues = [[ee109, "lecture"], [csci104, "lecture"], [math225, "discussion"], [csci104, "lab"]];
-const wed = [[math225, "lecture"], [gesm130, "lecture"], [ee109, "lab"]];
-const thurs = [[ee109, "lecture"], [csci104, "lecture"], [math225, "discussion"], [musc255, "lecture"]];
-const fri = [[math225, "lecture"]];
+const mon = [[hbio205, "lecture"], [ee250, "lecture"], [csci201, "lab"], [csci270, "lecture"]];
+const tues = [[csci102, "lab"], [csci201, "lecture"], [ee250, "lab"]];
+const wed = [[hbio205, "lecture"], [ee250, "lecture"], [csci270, "lecture"]];
+const thurs = [[csci102, "lab"], [csci201, "lecture"], [hbio205, "lab"]];
+const fri = [[hbio205, "lecture", [csci270, "discussion"], [engr100, "lecture"]]];
 ---
 
 <div class="content">

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "EE 250",
+    "type": "lecture",
+    "location": "LVL17",
+    "time": "10:00 AM - 11:50 PM",
+    "links": [
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/ee250"
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1TZRMlmaaeZvuI6g_wWdyeJR3hWbNqTw3"
+      }
+    ]
+  },
+  {
+    "name": "EE 250",
+    "type": "lab",
+    "location": "VHE205",
+    "time": "4:00 PM - 5:50 PM",
+    "links": [
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/ee250"
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1TZRMlmaaeZvuI6g_wWdyeJR3hWbNqTw3"
+      }
+    ]
+  }
+]
