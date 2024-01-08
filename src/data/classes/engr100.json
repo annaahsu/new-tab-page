@@ -2,12 +2,17 @@
   {
     "name": "ENGR 100",
     "type": "lecture",
-    "location": "GFS106",
-    "time": "1:00 PM - 1:50 PM",
+    "location": "RTH105",
+    "start": "2024-01-08T13:00:00",
+    "end": "2024-04-26T13:50:00",
     "links": [
       {
-        "name": "no link",
+        "name": "Blackboard",
         "link": "#"
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1t19cuF-vPPrAYYDAlWGJQvrkpRW_6YdP?usp=drive_link"
       }
     ]
   }

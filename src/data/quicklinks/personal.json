@@ -1,19 +1,11 @@
 [
   {
-    "name": "Tailscale",
-    "link": "https://login.tailscale.com/admin/machines"
-  },
-  {
     "name": "Bitwarden",
     "link": "https://vault.bitwarden.com/#/vault"
   },
   {
     "name": "iCloud",
     "link": "https://icloud.com"
-  },
-  {
-    "name": "Spotify",
-    "link": "https://open.spotify.com"
   },
   {
     "name": "Facebook",
@@ -26,5 +18,9 @@
   {
     "name": "Instagram",
     "link": "https://instagram.com"
+  },
+  {
+    "name": "Spotify",
+    "link": "https://open.spotify.com"
   }
 ]

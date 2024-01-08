@@ -1,6 +1,6 @@
 ---
-import ButtonBar from '@components/buttonbar.astro';
-import ButtonLink from '@components/buttonlink.astro';
+import ButtonBar from "@components/buttonbar.astro";
+import ButtonLink from "@components/buttonlink.astro";
 
 export interface Props {
   type: string;
@@ -10,7 +10,7 @@ export interface Props {
 const { type, section } = Astro.props;
 
 let i;
-if (type === "lecture") {
+if (type === "lecture" || type === "office hours") {
   i = 0;
 } else if (type === "discussion" || type === "lab") {
   i = 1;
@@ -19,17 +19,41 @@ if (type === "lecture") {
 }
 
 const c = section[i];
+
+const convertToTimeZone = (timeString, timeZone) => {
+  return new Date(
+    new Date(timeString).toLocaleString("en-US", { timeZone: timeZone })
+  );
+};
+
+const currentTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+const startTime = convertToTimeZone(c.start, currentTimeZone);
+const endTime = convertToTimeZone(c.end, currentTimeZone);
 ---
 
 <div class="section">
   <div>
     <h3>{c.name} ({c.type}) — {c.location}</h3>
-    <span class="time">{c.time}</span>
+    <span class="time"
+      >{
+        startTime.toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "numeric",
+        })
+      } - {
+        endTime.toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "numeric",
+        })
+      }</span
+    >
   </div>
   <ButtonBar>
-    {c.links.map(({ name, link }) => (
-    <ButtonLink href={link}>{name}</ButtonLink>
-    ))}
+    {
+      c.links.map(({ name, link }) => (
+        <ButtonLink href={link}>{name}</ButtonLink>
+      ))
+    }
   </ButtonBar>
 </div>
 

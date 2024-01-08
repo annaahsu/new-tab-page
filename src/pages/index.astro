@@ -16,7 +16,47 @@ import '../styles/global.scss';
 		<Header />
 		<Search />
 		<Content />
+		<button id="show-all">Show all</button>
 	</main>
 </body>
 
 </html>
+
+<style lang="scss">
+  #show-all {
+		font-family: inherit;
+		font-size: inherit;
+		position: fixed;
+		bottom: 16px;
+		right: 16px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: var(--med);
+    font-weight: bold;
+    background: var(--light);
+    box-shadow: inset 4px 0px 16px rgba(253, 250, 249, 0.5),
+      inset 0px -4px 16px rgba(249, 236, 234, 0.5),
+      inset -4px 0px 16px rgba(115, 48, 34, 0.5);
+    border-radius: 8px;
+    transition: none;
+		outline: none;
+		border: none;
+  }
+
+  #show-all:hover {
+		cursor: pointer;
+    box-shadow: inset 8px 0px 16px rgba(253, 250, 249, 0.5),
+      inset 0px -8px 16px rgba(249, 236, 234, 0.5),
+      inset -8px 0px 16px rgba(115, 48, 34, 0.5);
+    transition: 0.5s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #show-all:hover {
+      box-shadow: inset 4px 0px 16px rgba(253, 250, 249, 0.5),
+        inset 0px -4px 16px rgba(249, 236, 234, 0.5),
+        inset -4px 0px 16px rgba(115, 48, 34, 0.5);
+      transition: none;
+    }
+  }
+</style>

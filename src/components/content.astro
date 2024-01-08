@@ -1,30 +1,52 @@
 ---
-import Card from '@components/card.astro';
-import Day from '@components/day.astro';
+import Card from "@components/card.astro";
+import Day from "@components/day.astro";
 
-import webdev from '@data/quicklinks/webdev.json';
-import personal from '@data/quicklinks/personal.json';
-import productivity from '@data/quicklinks/productivity.json';
+import webdev from "@data/quicklinks/webdev.json";
+import personal from "@data/quicklinks/personal.json";
+import school from "@data/quicklinks/school.json";
 
-import general from '@data/school/general.json';
-import work from '@data/school/work.json';
+import csci353 from "@data/classes/csci353.json";
+import ee354 from "@data/classes/ee354.json";
+import ssci214 from "@data/classes/ssci214.json";
+import itp342 from "@data/classes/itp342.json";
+import engr100 from "@data/classes/engr100.json";
+import phed126 from "@data/classes/phed126.json";
+import csci103 from "@data/classes/csci103.json";
 
-import csci102 from '@data/classes/csci102.json';
-import csci270 from '@data/classes/csci270.json';
-import csci201 from '@data/classes/csci201.json';
-import ee250 from '@data/classes/ee250.json';
-import hbio205 from '@data/classes/hbio205.json';
-import engr100 from '@data/classes/engr100.json';
+const quicklinks = [
+  ["Web Dev", webdev],
+  ["Personal", personal],
+  ["School", school],
+];
 
-const quicklinks = [["Web Dev", webdev], ["Personal", personal], ["Productivity", productivity]];
-
-const school = [["General", general], ["Work", work]];
-
-const mon = [[hbio205, "lecture"], [ee250, "lecture"], [csci201, "lab"], [csci270, "lecture"]];
-const tues = [[csci102, "lab"], [csci201, "lecture"], [ee250, "lab"]];
-const wed = [[hbio205, "lecture"], [ee250, "lecture"], [csci270, "lecture"]];
-const thurs = [[csci102, "lab"], [csci201, "lecture"], [hbio205, "lab"]];
-const fri = [[hbio205, "lecture", [csci270, "discussion"], [engr100, "lecture"]]];
+const mon = [
+  [csci103, "office hours"],
+  [ee354, "lecture"],
+  [csci353, "lecture"],
+  [phed126, "lecture"],
+  [itp342, "lecture"],
+];
+const tues = [
+  [ssci214, "lecture"],
+  [ssci214, "discussion"],
+  [ee354, "lab"],
+];
+const wed = [
+  [csci103, "office hours"],
+  [ee354, "lecture"],
+  [csci353, "lecture"],
+  [itp342, "lecture"],
+];
+const thurs = [
+  [ssci214, "lecture"],
+  [csci103, "office hours"],
+];
+const fri = [
+  [csci103, "lab"],
+  [csci353, "discussion"],
+  [engr100, "lecture"],
+];
 ---
 
 <div class="content">
@@ -32,7 +54,6 @@ const fri = [[hbio205, "lecture", [csci270, "discussion"], [engr100, "lecture"]]
     <Card title="Quick Links" sections={quicklinks} />
   </div>
   <div class="right">
-    <Card title="School" sections={school} />
     <div class="mon day">
       <Day title="Monday" classes={mon} />
     </div>
@@ -74,17 +95,33 @@ const fri = [[hbio205, "lecture", [csci270, "discussion"], [engr100, "lecture"]]
 </style>
 
 <script>
+  const days = ["mon", "tues", "wed", "thurs", "fri"];
+
   const show = (classname) => {
     const elements = document.getElementsByClassName(classname);
-    for (let i = 0; i < elements.length; i++) {
-      elements[i].style.display = "block";
-    }
+    Array.from(elements).forEach((day) => (day.style.display = "block"));
   };
-  const setDisplay = (day) => {
-    const days = ["mon", "tues", "wed", "thurs", "fri"];
-    show(days[day - 1]);
-  };
+
+  const showAll = () => days.forEach((day) => show(day));
+
+  const setDisplay = (day) => show(days[day - 1]);
 
   let currDate = new Date();
   setDisplay(currDate.getDay());
+
+  let shown = false;
+
+  const showButton = document.getElementById("show-all");
+  showButton.addEventListener("click", () => {
+    if (shown) {
+      const allDays = document.getElementsByClassName("day");
+      Array.from(allDays).forEach((day) => (day.style.display = "none"));
+      setDisplay(currDate.getDay());
+      showButton.innerText = "Show all";
+    } else {
+      showAll();
+      showButton.innerText = "Show today";
+    }
+    shown = !shown;
+  });
 </script>
