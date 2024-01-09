@@ -8,7 +8,11 @@
     "links": [
       {
         "name": "Blackboard",
-        "link": "https://blackboard.usc.edu/webapps/blackboard/execute/announcement?method=search&context=course_entry&course_id=_332517_1&"
+        "link": "https://blackboard.usc.edu/webapps/blackboard/execute/announcement?method=search&context=course_entry&course_id=_332517_1"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/bennettl/ITP-342-Spring-2024"
       }
     ]
   }
