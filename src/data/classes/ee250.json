@@ -1,0 +1,44 @@
+[
+  {
+    "name": "EE 250",
+    "type": "office hours",
+    "location": "VHE 205",
+    "start": "2024-08-26T08:30:00",
+    "end": "2024-12-06T10:00:00",
+    "links": [
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/ee250/"
+      },
+      {
+        "name": "Brightspace",
+        "link": "https://brightspace.usc.edu/d2l/home/114121"
+      },
+      {
+        "name": "Piazza",
+        "link": "https://piazza.com/class/lz8m706t2q357u"
+      }
+    ]
+  },
+  {
+    "name": "EE 250",
+    "type": "lab",
+    "location": "VHE 205",
+    "start": "2024-08-26T15:00:00",
+    "end": "2024-12-06T17:50:00",
+    "links": [
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/ee250/"
+      },
+      {
+        "name": "Brightspace",
+        "link": "https://brightspace.usc.edu/d2l/home/114121"
+      },
+      {
+        "name": "Piazza",
+        "link": "https://piazza.com/class/lz8m706t2q357u"
+      }
+    ]
+  }
+]
