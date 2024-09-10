@@ -9,11 +9,15 @@
       {
         "name": "Brightspace",
         "link": "https://brightspace.usc.edu/d2l/home/114210"
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1_xQXJ-0jVrKgz1yatuGQcvM8zbwPXY80?usp=drive_link"
       }
     ]
   },
   {
-    "name": "EE 477",
+    "name": "EE 454",
     "type": "lab",
     "location": "THH 212",
     "start": "2024-08-26T18:00:00",
@@ -22,6 +26,10 @@
       {
         "name": "Brightspace",
         "link": "https://brightspace.usc.edu/d2l/home/114210"
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1_xQXJ-0jVrKgz1yatuGQcvM8zbwPXY80?usp=drive_link"
       }
     ]
   }
