@@ -1,0 +1,36 @@
+[
+  {
+    "name": "AMST 150",
+    "type": "lecture",
+    "location": "THH 301",
+    "start": "2025-01-13T17:00:00",
+    "end": "2025-05-02T18:20:00",
+    "links": [
+      {
+        "name": "Brightspace",
+        "link": ""
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/149dS4VOOp7rTXk3h0v29kCR6QIvDZONZ?usp=sharing"
+      }
+    ]
+  },
+  {
+    "name": "AMST 150",
+    "type": "discussion",
+    "location": "GFS 109",
+    "start": "2025-01-13T13:00:00",
+    "end": "2025-05-02T13:50:00",
+    "links": [
+      {
+        "name": "Brightspace",
+        "link": ""
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/149dS4VOOp7rTXk3h0v29kCR6QIvDZONZ?usp=sharing"
+      }
+    ]
+  }
+]

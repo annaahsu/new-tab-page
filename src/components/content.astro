@@ -6,11 +6,12 @@ import webdev from "@data/quicklinks/webdev.json";
 import personal from "@data/quicklinks/personal.json";
 import school from "@data/quicklinks/school.json";
 
-import csci350 from "@data/classes/csci350.json";
-import ee477 from "@data/classes/ee477.json";
-import ee454 from "@data/classes/ee454.json";
-import danc280 from "@data/classes/danc280.json";
-import ee250 from "@data/classes/ee250.json";
+// import ee250 from "@data/classes/ee250.json";
+
+import ee457 from "@data/classes/ee457.json";
+import ee508 from "@data/classes/ee508.json";
+import math407 from "@data/classes/math407.json";
+import amst150 from "@data/classes/amst150.json";
 
 const quicklinks = [
   ["Web Dev", webdev],
@@ -19,26 +20,29 @@ const quicklinks = [
 ];
 
 const mon = [
-  [ee250, "office hours"],
-  [danc280, "lecture"],
-  [ee477, "lecture"],
-  [ee454, "lecture"],
+  [math407, "lecture"],
+  [amst150, "lecture"]
 ];
 const tues = [
-  [ee250, "lab"],
-  [ee477, "lab"],
+  [math407, "discussion"],
+  [ee457, "lecture"]
 ];
 const wed = [
-  [ee250, "office hours"],
-  [danc280, "lecture"],
-  [ee477, "lecture"],
-  [ee454, "lecture"],
+  [math407, "lecture"],
+  [amst150, "lecture"]
 ];
-const thurs = [];
+const thurs = [
+  [math407, "discussion"],
+  [ee457, "lecture"]
+];
 const fri = [
-  [ee454, "lab"],
-  [csci350, "lecture"],
+  [math407, "lecture"],
+  [ee457, "lab"],
+  [amst150, "discussion"]
 ];
+const sat = [
+  [ee508, "lecture"]
+]
 ---
 
 <div class="content">
@@ -60,6 +64,9 @@ const fri = [
     </div>
     <div class="fri day">
       <Day title="Friday" classes={fri} />
+    </div>
+    <div class="sat day">
+      <Day title="Saturday" classes={sat} />
     </div>
   </div>
 </div>
@@ -87,7 +94,7 @@ const fri = [
 </style>
 
 <script>
-  const days = ["mon", "tues", "wed", "thurs", "fri"];
+  const days = ["mon", "tues", "wed", "thurs", "fri", "sat"];
 
   const show = (classname) => {
     const elements = document.getElementsByClassName(classname);
