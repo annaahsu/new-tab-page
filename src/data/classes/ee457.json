@@ -8,15 +8,7 @@
     "links": [
       {
         "name": "Brightspace",
-        "link": ""
-      },
-      {
-        "name": "D2L",
-        "link": ""
-      },
-      {
-        "name": "Google Drive",
-        "link": ""
+        "link": "https://brightspace.usc.edu/d2l/home/178757"
       },
       {
         "name": "Class Directory",
@@ -25,6 +17,10 @@
       {
         "name": "Class Notes",
         "link": "https://viterbi-web.usc.edu/www-classes/engr/ee-s/457/EE457_Classnotes/"
+      },
+      {
+        "name": "Piazza",
+        "link": "https://piazza.com/class/m5idialoc3044n"
       }
     ]
   },
@@ -37,15 +33,7 @@
     "links": [
       {
         "name": "Brightspace",
-        "link": ""
-      },
-      {
-        "name": "D2L",
-        "link": ""
-      },
-      {
-        "name": "Google Drive",
-        "link": ""
+        "link": "https://brightspace.usc.edu/d2l/home/178757"
       },
       {
         "name": "Class Directory",
@@ -54,6 +42,10 @@
       {
         "name": "Class Notes",
         "link": "https://viterbi-web.usc.edu/www-classes/engr/ee-s/457/EE457_Classnotes/"
+      },
+      {
+        "name": "Piazza",
+        "link": "https://piazza.com/class/m5idialoc3044n"
       }
     ]
   }
