@@ -6,11 +6,11 @@ import webdev from "@data/quicklinks/webdev.json";
 import personal from "@data/quicklinks/personal.json";
 import school from "@data/quicklinks/school.json";
 
-import ee457 from "@data/classes/ee457.json";
-import ee508 from "@data/classes/ee508.json";
-import math407 from "@data/classes/math407.json";
-import amst150 from "@data/classes/amst150.json";
-import csci103 from "@data/classes/csci103.json";
+import writ340 from "@data/classes/writ340.json";
+import naut301 from "@data/classes/naut301.json";
+import ee557 from "@data/classes/ee557.json";
+import ee511 from "@data/classes/ee511.json";
+import csci431 from "@data/classes/csci431.json";
 
 const quicklinks = [
   ["Web Dev", webdev],
@@ -19,31 +19,26 @@ const quicklinks = [
 ];
 
 const mon = [
-  [csci103, "office hours"],
-  [ee508, "discussion"],
-  [math407, "lecture"],
-  [amst150, "lecture"]
+  [writ340, "lecture"],
+  [ee511, "lecture"],
+  [naut301, "lecture"]
 ];
 const tues = [
-  [math407, "discussion"],
-  [ee457, "lecture"]
+  [ee557, "lecture"],
+  [csci431, "lecture"]
 ];
 const wed = [
-  [amst150, "discussion"],
-  [math407, "lecture"],
-  [amst150, "lecture"]
+  [writ340, "lecture"],
+  [ee511, "lecture"]
 ];
 const thurs = [
-  [math407, "discussion"],
-  [ee457, "lecture"]
+  [ee557, "lecture"],
+  [csci431, "lecture"]
 ];
 const fri = [
-  [math407, "lecture"],
-  [ee457, "lab"]
+  [ee557, "discussion"],
+  [ee511, "discussion"]
 ];
-const sat = [
-  [ee508, "lecture"]
-]
 ---
 
 <div class="content">
@@ -65,9 +60,6 @@ const sat = [
     </div>
     <div class="fri day">
       <Day title="Friday" classes={fri} />
-    </div>
-    <div class="sat day">
-      <Day title="Saturday" classes={sat} />
     </div>
   </div>
 </div>

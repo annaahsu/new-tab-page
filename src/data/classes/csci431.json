@@ -1,0 +1,19 @@
+[
+  {
+    "name": "CSCI 431",
+    "type": "lecture",
+    "location": "GFS 223",
+    "start": "2025-08-25T16:00:00",
+    "end": "2025-08-25T17:50:00",
+    "links": [
+      {
+        "name": "Brightspace",
+        "link": "https://brightspace.usc.edu/d2l/home/219339"
+      },
+      {
+        "name": "Piazza",
+        "link": ""
+      }
+    ]
+  }
+]
