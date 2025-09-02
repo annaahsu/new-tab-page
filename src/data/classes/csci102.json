@@ -1,0 +1,52 @@
+[
+  {
+    "name": "CSCI 102",
+    "type": "office hours",
+    "location": "GCS",
+    "start": "2025-08-25T11:30:00",
+    "end": "2025-08-25T13:30:00",
+    "links": [
+      {
+        "name": "Brightspace",
+        "link": "https://brightspace.usc.edu/d2l/home/218937"
+      },
+      {
+        "name": "EdStem",
+        "link": "https://edstem.org/us/courses/81056/discussion"
+      },
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/cs102/index.html"
+      },
+      {
+        "name": "Codio",
+        "link": "https://codio.com/home/teacher/67c3c3cbad378ebb3c98a931a888f6ee/overview"
+      }
+    ]
+  },
+  {
+    "name": "CSCI 102",
+    "type": "lab",
+    "location": "DMC 107",
+    "start": "2025-08-25T11:30:00",
+    "end": "2025-08-25T13:30:00",
+    "links": [
+      {
+        "name": "Brightspace",
+        "link": "https://brightspace.usc.edu/d2l/home/218937"
+      },
+      {
+        "name": "EdStem",
+        "link": "https://edstem.org/us/courses/81056/discussion"
+      },
+      {
+        "name": "Bytes",
+        "link": "https://bytes.usc.edu/cs102/index.html"
+      },
+      {
+        "name": "Codio",
+        "link": "https://codio.com/home/teacher/67c3c3cbad378ebb3c98a931a888f6ee/overview"
+      }
+    ]
+  }
+]
