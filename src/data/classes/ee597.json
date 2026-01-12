@@ -1,0 +1,44 @@
+[
+  {
+    "name": "EE 597",
+    "type": "lecture",
+    "location": "DMC 207",
+    "start": "2026-01-12T10:00:00",
+    "end": "2026-05-01T11:50:00",
+    "links": [
+      {
+        "name": "Brightspace",
+        "link": ""
+      },
+      {
+        "name": "Piazza",
+        "link": "https://piazza.com/class/mkah1go2n563vp/"
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1g--2YCxbpRNzfUQg4cwfM6AUWziEHEFb"
+      }
+    ]
+  },
+  {
+    "name": "EE 597",
+    "type": "discussion",
+    "location": "TBD",
+    "start": "2026-01-12T08:00:00",
+    "end": "2026-05-01T09:50:00",
+    "links": [
+      {
+        "name": "Brightspace",
+        "link": "https://brightspace.usc.edu/d2l/home/262053"
+      },
+      {
+        "name": "Piazza",
+        "link": "https://piazza.com/class/mkah1go2n563vp/"
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com/drive/folders/1g--2YCxbpRNzfUQg4cwfM6AUWziEHEFb"
+      }
+    ]
+  }
+]

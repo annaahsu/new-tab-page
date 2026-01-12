@@ -1,0 +1,15 @@
+[
+  {
+    "name": "CSCI 401",
+    "type": "lecture",
+    "location": "THH 301",
+    "start": "2026-01-12T08:00:00",
+    "end": "2026-05-01T09:50:00",
+    "links": [
+      {
+        "name": "Brightspace",
+        "link": "https://brightspace.usc.edu/d2l/home/271073"
+      }
+    ]
+  }
+]
